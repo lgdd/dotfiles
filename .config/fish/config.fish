@@ -46,7 +46,7 @@ set -p PATH $HOME/.config/yarn/global/node_modules/.bin
 
 # Completions
 
-if hash lfr 2>/dev/null
+if command -v lfr &> /dev/null
     lfr completion fish > ~/.config/fish/completions/lfr.fish
 end
 

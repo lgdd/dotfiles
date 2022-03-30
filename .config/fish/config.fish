@@ -46,7 +46,9 @@ set -p PATH $HOME/.config/yarn/global/node_modules/.bin
 
 # Completions
 
-lfr completion fish > ~/.config/fish/completions/lfr.fish
+if hash lfr 2>/dev/null
+    lfr completion fish > ~/.config/fish/completions/lfr.fish
+end
 
 # Theme
 
